@@ -9,17 +9,17 @@
  */
 int main(void)
 {
-    char lowercase = 'a';
+	char lowercase = 'a';
 
-    /* Print lowercase alphabet */
-    while (lowercase <= 'z')
-    {
-        putchar(lowercase);
-        lowercase++;
-    }
+	/* Print lowercase alphabet */
+	while (lowercase <= 'z')
+	{
+		putchar(lowercase);
+		lowercase++;
+	}
 
-    putchar('\n'); /* Print a new line */
+	putchar('\n'); /* Print a new line */
 
-    return (0);
+	return (0);
 }
 
