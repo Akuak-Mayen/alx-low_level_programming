@@ -8,9 +8,17 @@ int main(void)
 
   a[2] = 1024;
   p = &n;
-  /* My line of code */
-  printf("a[2] = %d\n", *(int *)((char *)p + 20));
-  /* End of my code */
+  /*
+   * write your line of code here...
+   * Remember:
+   * - you are not allowed to use a
+   * - you are not allowed to modify p
+   * - only one statement
+   * - you are not allowed to code anything else than this line of code
+   */
+  *(int *)((char *)(a + 2) - sizeof(int)) = 98;
+  /* ...so that this prints 98\n */
+  printf("a[2] = %d\n", a[2]);
   return (0);
 }
 
